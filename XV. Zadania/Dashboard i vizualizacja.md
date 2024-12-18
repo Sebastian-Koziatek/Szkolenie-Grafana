@@ -20,7 +20,7 @@
   - **Item**: `memory utilization`
 
 ### Panel 3: Relacje między CPU, RAM, dyskiem twardym, a kartą sieciową
-- **Typ wizualizacji**: Time Series
+- **Typ wizualizacji**: Bar guage
 - **Opis**: Panel ten pokazuje relacje między różnymi zasobami systemowymi:
   - **CPU Usage**: Zużycie CPU w procentach
   - **RAM Usage**: Zużycie pamięci RAM
@@ -36,11 +36,9 @@
   - **Item**:
     - CPU: `cpu utilization`
     - RAM: `memory utilization`
-    - Dysk: `disk usage`
-    - Karta sieciowa: `network speed`
-  - **Oś Y1**: Zużycie CPU i RAM w procentach
-  - **Oś Y2**: Prędkość pobierania/wysyłania danych w Mbps
-  - **Oś X**: Czas
+    - Dysk: `FS [/]: Space: Used, in %`
+    - Karta sieciowa: `Interface ens18: Bits sent`
+    - Karta sieciowa `Interface ens18: Bits recived`
 
 ---
 
@@ -70,4 +68,8 @@ Ten dashboard będzie zawierał stronę `.md` jako część panelu, która będz
     ## Karta sieciowa
     Szybkość pobierania i wysyłania danych jest monitorowana za pomocą metryki `network speed`.
     ```
+
+## 3. Dashboard z Geolokacja
+
+Używając bazy danych do lokalizacji, stwórz dashboard z geolokacja wyświetlającą USA w panelu.
 
